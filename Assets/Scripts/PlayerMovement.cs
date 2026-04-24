@@ -11,6 +11,11 @@ public class PlayerMovement : MonoBehaviour
     public int maxJumps = 2; // Public variable to set the total number of jumps allowed
     public float groundPoundForce = 25f;
 
+    // Added for pickup functionality (assign in Inspector)
+    public CoinManager coinManager;
+    public AudioManager audioManager;
+    public GameObject pickupCollectVFX; // assign prefab in Inspector
+
     private float moveDirection;
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -171,8 +176,39 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
-}
 
+    // Coin / pickup handling copied/adapted from old script
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("CoinCollection"))
+        {
+            // Play coin sound using a temporary audio source so destroying the coin won't stop it.
+            if (audioManager != null && audioManager.audioClip != null)
+            {
+                // Play at camera position to behave like 2D UI sound (full volume, no 3D attenuation).
+                Vector3 playPos = Camera.main != null ? Camera.main.transform.position : transform.position;
+                AudioSource.PlayClipAtPoint(audioManager.audioClip, playPos);
+            }
+            else if (audioManager != null)
+            {
+                // Fallback: attempt to call PlayAudio (may be on a persistent AudioManager)
+                audioManager.PlayAudio();
+            }
+
+            if (pickupCollectVFX != null)
+            {
+                Instantiate(pickupCollectVFX, transform.position, Quaternion.identity);
+            }
+
+            Destroy(other.gameObject);
+
+            if (coinManager != null)
+            {
+                coinManager.coinCount++;
+            }
+        }
+    }
+}
 
 
 // ***************  THIS IS THE END OF THE CODE  ************************
