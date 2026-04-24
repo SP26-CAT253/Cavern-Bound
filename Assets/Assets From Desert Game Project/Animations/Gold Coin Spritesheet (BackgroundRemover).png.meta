@@ -1,0 +1,425 @@
+fileFormatVersion: 2
+guid: d94ad53e6eb2bd341acacbec329c34d2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 94
+        width: 72
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49749ad85fe45b54ab98a0aecb4b5a05
+      internalID: -466306585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_16
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 95
+        width: 61
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048996c844a525644af6b55672c0b08b
+      internalID: -986749065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 95
+        width: 60
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd25621f6f563eb4dbd69b5a73590b30
+      internalID: 2115500415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_18
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 93
+        width: 49
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b2e547f3e383441b5ebfb37c7d67f8
+      internalID: 227342155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 93
+        width: 40
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b752f9a38f4b99142b0d91a5413c228b
+      internalID: -459363327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_20
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 93
+        width: 39
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96a0ddabfe5dbf438a608a34c4f7d75
+      internalID: 1685368833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_21
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 93
+        width: 28
+        height: 74
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc128793d86b2ab42ab9a53d35bed858
+      internalID: 1744907629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_22
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 95
+        width: 39
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1640ed6a2900cd9408f20dc92b966516
+      internalID: 1588042597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_23
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 93
+        width: 38
+        height: 74
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4cfa11829487d4a91e9123d9804a80
+      internalID: 1935303636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_24
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 93
+        width: 48
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec6849a05c4d174f9fafd9f172300ee
+      internalID: -1568627635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_25
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 93
+        width: 60
+        height: 74
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d9cea1a17314d43ad4a8d4b258871e
+      internalID: -365148370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_26
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 95
+        width: 62
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235fcef94d512a849821132ec6f61860
+      internalID: 521325551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Spritesheet (BackgroundRemover)_27
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 95
+        width: 68
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9006ae2cc03fc448cfe478fc1cbe49
+      internalID: -1240885975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7a309e700ce94ae46be518ddeeed669b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Gold Coin Spritesheet (BackgroundRemover)_10: 1859458972
+      Gold Coin Spritesheet (BackgroundRemover)_22: 1588042597
+      Gold Coin Spritesheet (BackgroundRemover)_15: -466306585
+      Gold Coin Spritesheet (BackgroundRemover)_6: 1328097479
+      Gold Coin Spritesheet (BackgroundRemover)_18: 227342155
+      Gold Coin Spritesheet (BackgroundRemover)_5: 233003084
+      Gold Coin Spritesheet (BackgroundRemover)_9: 1354165439
+      Gold Coin Spritesheet (BackgroundRemover)_14: 172207511
+      Gold Coin Spritesheet (BackgroundRemover)_24: -1568627635
+      Gold Coin Spritesheet (BackgroundRemover)_12: 1909959953
+      Gold Coin Spritesheet (BackgroundRemover)_25: -365148370
+      Gold Coin Spritesheet (BackgroundRemover)_16: -986749065
+      Gold Coin Spritesheet (BackgroundRemover)_27: -1240885975
+      Gold Coin Spritesheet (BackgroundRemover)_8: 768034178
+      Gold Coin Spritesheet (BackgroundRemover)_21: 1744907629
+      Gold Coin Spritesheet (BackgroundRemover)_2: -1599050387
+      Gold Coin Spritesheet (BackgroundRemover)_7: -242627303
+      Gold Coin Spritesheet (BackgroundRemover)_17: 2115500415
+      Gold Coin Spritesheet (BackgroundRemover)_11: -1163555783
+      Gold Coin Spritesheet (BackgroundRemover)_4: -1921417556
+      Gold Coin Spritesheet (BackgroundRemover)_19: -459363327
+      Gold Coin Spritesheet (BackgroundRemover)_0: 1471391433
+      Gold Coin Spritesheet (BackgroundRemover)_1: 1857405153
+      Gold Coin Spritesheet (BackgroundRemover)_3: 1320260205
+      Gold Coin Spritesheet (BackgroundRemover)_13: -2124625690
+      Gold Coin Spritesheet (BackgroundRemover)_23: 1935303636
+      Gold Coin Spritesheet (BackgroundRemover)_26: 521325551
+      Gold Coin Spritesheet (BackgroundRemover)_20: 1685368833
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

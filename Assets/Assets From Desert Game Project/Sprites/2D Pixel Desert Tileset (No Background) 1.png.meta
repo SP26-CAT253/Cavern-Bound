@@ -1,0 +1,1903 @@
+fileFormatVersion: 2
+guid: 7a6e814d641acd1499c1ae2c873b6812
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 59
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49e053b190a7664ea90392182cbcb78
+      internalID: -532542227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8d127faaa574c4bb1d08f427a7dd04
+      internalID: -1518203798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883a71a66eaa895429c2f970a851f4fe
+      internalID: -2131811746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_3
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89227146b75b41d43b7f0c7a976c6092
+      internalID: 489618365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_4
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20db99cbff263e54d8ff62735d62697d
+      internalID: -1259213207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_5
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc235015ee061240ad4b1c510f7ed71
+      internalID: -619695332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_6
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2ed153fa3c987468ce697cedc671f4
+      internalID: 1445627322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_7
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6ae52ada2b41444843ed5ca7c44070
+      internalID: -1493344662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbe931b54d29db44849cab26b22ea14
+      internalID: 368036213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_9
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f81f9cfc3b06544f827e0e720e62889
+      internalID: 1219551389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_10
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 443
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff9458a9445e22408848f7eafd8d505
+      internalID: 1504533377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5799793c3fb3f1e4cac6e373c1cb4377
+      internalID: -1424606814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_12
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f53c0c86f5a2045bb31ec7fb01fc62
+      internalID: 803044543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d3d90d089f2e947b7e87d6f533d614
+      internalID: 2144713856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_14
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37daf93867df33b46bbffaea0ea18bae
+      internalID: -57132865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_15
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083a2501395451842818ebcb9a77d8cf
+      internalID: 1243224152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_16
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd57057c07247d54a933adf8b6b5bee6
+      internalID: -786838392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_17
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad1b77496288f842b205846bdd6b611
+      internalID: 927970377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_18
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d8067ea0fb56a489f4f70a5f4b5be5
+      internalID: -586228838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_19
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b26400525e8cc4594087946d99f8cf
+      internalID: -1119102306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_20
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee79213d14819a4dadeded559afbd25
+      internalID: 623394458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_21
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 373
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7700fa1b4c50346b7f1528eae5ff36
+      internalID: 1089800131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e426f80f0efc3fa4eaf2f26af5697b56
+      internalID: -116555089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_23
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f66a2e3625097c4fae28f35b3b13741
+      internalID: -329600561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd842e541d9c6b469e16fe767c19780
+      internalID: 1734993100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_25
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a9e17631bc79b498e871aa5bebc045
+      internalID: -1867783566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_26
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937e3b9df8c7d3d4e97ee818cd61ce7e
+      internalID: -298732400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_27
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d77597e30316e4998d4757f63f4621
+      internalID: -424480332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_28
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22067cec5a91e34db128234d6a8f186
+      internalID: 1410155355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_29
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f1964749c7be64f9b8cc3b720caa26
+      internalID: 1109047075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_30
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb025792e9d1304eaf706becb3d8ade
+      internalID: 304853016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_31
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14971a1d3c02fca48bd31f3580777aad
+      internalID: -1104070722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_32
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 303
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ad3d246564e1a438ef52419434ea72
+      internalID: 1994582123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb1ef0ba1d196d41a5872832163938e
+      internalID: 1392805898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_34
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1c21e945c740e4baebd2ec341f2fba
+      internalID: -799285986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_35
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1b9ef31e937474a9a4a37e7fc5076b
+      internalID: 998640854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_36
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cb4f745180be24ca102fee08823dd6
+      internalID: 1800713069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_37
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4974845fb281b8748baebbece34416ff
+      internalID: -1572611935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_38
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c58e58df4ea8d94abca82dec5644923
+      internalID: -1654819972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_39
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf5a127c836f224fa4ca5398a526e5d
+      internalID: -216414946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_40
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6211f5c10f46fe843a0ceeabc4154ff5
+      internalID: -1702958291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_41
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099e035707713474bbb69ee35dc3c3c9
+      internalID: 1354472458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_42
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9994c15a5f30944bae0b78f623fe15c
+      internalID: 2115876033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_43
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 233
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c456b653cc3dc4899fcdc8933be3b1
+      internalID: 1334352506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_44
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5e8a8c924d9fc468529111092917f7
+      internalID: 2043578414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_45
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96eda377741c9404ab517b2ee12b150a
+      internalID: 1828228750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_46
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b962ba258c778fd49931e7ac09c29638
+      internalID: -1119077222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_47
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24ed890b6029fa4790b9752275d0edd
+      internalID: -846641163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_48
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad86ef76af75bb4a83b2352b9090a45
+      internalID: -1565259715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_49
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e49a36679d6844da643ff6143e9489
+      internalID: 43434545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_50
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a176b19f7b38843a8346c5dec9fa33
+      internalID: 763797964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_51
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa101f3bded660c4f8fa9761b9ae576a
+      internalID: -1968871417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_52
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca0130bb4fab7e4a8ddafa6348d8c00
+      internalID: -1013710529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_53
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a38c2a6cf4856d4b8803123da3480ce
+      internalID: 1505325454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_54
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 163
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4a09febf31e0b41b8e911f8198f39d
+      internalID: 241246860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_55
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c97584d2f6095b489b5526203629714
+      internalID: 1353706329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_56
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f7e3373932c524fbdd76b9ed9011b0
+      internalID: -2023037424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_57
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea1159c989e49e4e9d81a3d05c70161
+      internalID: 1795097308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_58
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3be8b4c838da24380a0f5b1936456a
+      internalID: -36635913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_59
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777a679fe1d4fc24391b2071bd74a31f
+      internalID: -1679732159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_60
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a67dd5ad1ff4144a84748ada4b40f15
+      internalID: -590221447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_61
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a4404975f7e4e4cab1c8dd1649f2ee
+      internalID: 86874845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_62
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ca30b1481344843a8efeab749a827d
+      internalID: 174006678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_63
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ebaf4c3088ee447a37937d38b452ff
+      internalID: 2083408392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_64
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2601fa7923306fb448e06ebe527c6ca3
+      internalID: 1749334425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_65
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 93
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed5afdd3c9a4be49bfbc3f24648a06c
+      internalID: -1712004128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_66
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ca7728cdc276f439ba7f33079c5252
+      internalID: 554839662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_67
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5527a48fb5b9224419f87a4feb546914
+      internalID: 734275401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_68
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f8a500b739213428b48f63beda6896
+      internalID: -520205151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_69
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba578a36ca2770498351d043b0529a4
+      internalID: 293678704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_70
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7afb8abf8119e498265a98d5e87db4
+      internalID: -2143345410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_71
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c8351f8298ed248b2b87453c8f4b42
+      internalID: 415768509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_72
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec5245f3eb7b46488490ca893188642
+      internalID: -1854950893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_73
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a98d62e77606042b76719d561ee4cb
+      internalID: -745452128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_74
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477eab3215e11db4b83183540a0170de
+      internalID: 464545874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_75
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cbae41884aa444ba47c70e553e3f64
+      internalID: 1107493085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Pixel Desert Tileset (No Background) 1_76
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 23
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21cf73132e6112047a62b834312d98a3
+      internalID: -1858062832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7df5aade37afd354fa52ea05d65ab785
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":60.0,"y":61.0},"gridSpriteOffset":{"x":16.0,"y":25.0},"gridSpritePadding":{"x":10.0,"y":9.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      2D Pixel Desert Tileset (No Background) 1_0: -532542227
+      2D Pixel Desert Tileset (No Background) 1_1: -1518203798
+      2D Pixel Desert Tileset (No Background) 1_10: 1504533377
+      2D Pixel Desert Tileset (No Background) 1_11: -1424606814
+      2D Pixel Desert Tileset (No Background) 1_12: 803044543
+      2D Pixel Desert Tileset (No Background) 1_13: 2144713856
+      2D Pixel Desert Tileset (No Background) 1_14: -57132865
+      2D Pixel Desert Tileset (No Background) 1_15: 1243224152
+      2D Pixel Desert Tileset (No Background) 1_16: -786838392
+      2D Pixel Desert Tileset (No Background) 1_17: 927970377
+      2D Pixel Desert Tileset (No Background) 1_18: -586228838
+      2D Pixel Desert Tileset (No Background) 1_19: -1119102306
+      2D Pixel Desert Tileset (No Background) 1_2: -2131811746
+      2D Pixel Desert Tileset (No Background) 1_20: 623394458
+      2D Pixel Desert Tileset (No Background) 1_21: 1089800131
+      2D Pixel Desert Tileset (No Background) 1_22: -116555089
+      2D Pixel Desert Tileset (No Background) 1_23: -329600561
+      2D Pixel Desert Tileset (No Background) 1_24: 1734993100
+      2D Pixel Desert Tileset (No Background) 1_25: -1867783566
+      2D Pixel Desert Tileset (No Background) 1_26: -298732400
+      2D Pixel Desert Tileset (No Background) 1_27: -424480332
+      2D Pixel Desert Tileset (No Background) 1_28: 1410155355
+      2D Pixel Desert Tileset (No Background) 1_29: 1109047075
+      2D Pixel Desert Tileset (No Background) 1_3: 489618365
+      2D Pixel Desert Tileset (No Background) 1_30: 304853016
+      2D Pixel Desert Tileset (No Background) 1_31: -1104070722
+      2D Pixel Desert Tileset (No Background) 1_32: 1994582123
+      2D Pixel Desert Tileset (No Background) 1_33: 1392805898
+      2D Pixel Desert Tileset (No Background) 1_34: -799285986
+      2D Pixel Desert Tileset (No Background) 1_35: 998640854
+      2D Pixel Desert Tileset (No Background) 1_36: 1800713069
+      2D Pixel Desert Tileset (No Background) 1_37: -1572611935
+      2D Pixel Desert Tileset (No Background) 1_38: -1654819972
+      2D Pixel Desert Tileset (No Background) 1_39: -216414946
+      2D Pixel Desert Tileset (No Background) 1_4: -1259213207
+      2D Pixel Desert Tileset (No Background) 1_40: -1702958291
+      2D Pixel Desert Tileset (No Background) 1_41: 1354472458
+      2D Pixel Desert Tileset (No Background) 1_42: 2115876033
+      2D Pixel Desert Tileset (No Background) 1_43: 1334352506
+      2D Pixel Desert Tileset (No Background) 1_44: 2043578414
+      2D Pixel Desert Tileset (No Background) 1_45: 1828228750
+      2D Pixel Desert Tileset (No Background) 1_46: -1119077222
+      2D Pixel Desert Tileset (No Background) 1_47: -846641163
+      2D Pixel Desert Tileset (No Background) 1_48: -1565259715
+      2D Pixel Desert Tileset (No Background) 1_49: 43434545
+      2D Pixel Desert Tileset (No Background) 1_5: -619695332
+      2D Pixel Desert Tileset (No Background) 1_50: 763797964
+      2D Pixel Desert Tileset (No Background) 1_51: -1968871417
+      2D Pixel Desert Tileset (No Background) 1_52: -1013710529
+      2D Pixel Desert Tileset (No Background) 1_53: 1505325454
+      2D Pixel Desert Tileset (No Background) 1_54: 241246860
+      2D Pixel Desert Tileset (No Background) 1_55: 1353706329
+      2D Pixel Desert Tileset (No Background) 1_56: -2023037424
+      2D Pixel Desert Tileset (No Background) 1_57: 1795097308
+      2D Pixel Desert Tileset (No Background) 1_58: -36635913
+      2D Pixel Desert Tileset (No Background) 1_59: -1679732159
+      2D Pixel Desert Tileset (No Background) 1_6: 1445627322
+      2D Pixel Desert Tileset (No Background) 1_60: -590221447
+      2D Pixel Desert Tileset (No Background) 1_61: 86874845
+      2D Pixel Desert Tileset (No Background) 1_62: 174006678
+      2D Pixel Desert Tileset (No Background) 1_63: 2083408392
+      2D Pixel Desert Tileset (No Background) 1_64: 1749334425
+      2D Pixel Desert Tileset (No Background) 1_65: -1712004128
+      2D Pixel Desert Tileset (No Background) 1_66: 554839662
+      2D Pixel Desert Tileset (No Background) 1_67: 734275401
+      2D Pixel Desert Tileset (No Background) 1_68: -520205151
+      2D Pixel Desert Tileset (No Background) 1_69: 293678704
+      2D Pixel Desert Tileset (No Background) 1_7: -1493344662
+      2D Pixel Desert Tileset (No Background) 1_70: -2143345410
+      2D Pixel Desert Tileset (No Background) 1_71: 415768509
+      2D Pixel Desert Tileset (No Background) 1_72: -1854950893
+      2D Pixel Desert Tileset (No Background) 1_73: -745452128
+      2D Pixel Desert Tileset (No Background) 1_74: 464545874
+      2D Pixel Desert Tileset (No Background) 1_75: 1107493085
+      2D Pixel Desert Tileset (No Background) 1_76: -1858062832
+      2D Pixel Desert Tileset (No Background) 1_8: 368036213
+      2D Pixel Desert Tileset (No Background) 1_9: 1219551389
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
