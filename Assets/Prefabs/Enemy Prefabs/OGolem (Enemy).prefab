@@ -32,6 +32,10 @@ PrefabInstance:
       propertyPath: deathClip
       value: 
       objectReference: {fileID: 8300000, guid: 27f9d10778f0df64790d634a4fdf819b, type: 3}
+    - target: {fileID: 2840446915792190306, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2857385363779156450, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
       propertyPath: m_Name
       value: OGolem (Enemy)
@@ -75,6 +79,10 @@ PrefabInstance:
     - target: {fileID: 4029853385541478505, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900951385860944145, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8256754472258662024, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
       propertyPath: m_Controller
