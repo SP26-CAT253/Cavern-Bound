@@ -25,6 +25,27 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
     [Header("References")] // Inspector header for references
     public Transform player; // Reference to player transform
 
+    // Audio: optional AudioManager or per-enemy AudioClip
+    [Header("Audio")]
+    public AudioManager audioManager; // optional, will be auto-found if left null
+    public AudioClip attackClip; // optional per-enemy override clip
+
+    [Header("Death Audio")]
+    public AudioClip deathClip; // clip to play when enemy dies
+    public bool spatialDeath = true; // true -> play at enemy position, false -> play at camera position
+
+    [Header("Hurt Audio")]
+    public AudioClip hurtClip; // clip to play when enemy is hurt
+    public bool spatialHurt = true; // play at enemy position when true, otherwise at camera
+
+    // Walking audio (plays while IsWalking is active)
+    [Header("Walking Audio")]
+    public AudioClip walkClip; // assign a looping walk sound in Inspector
+    [Range(0f, 1f)]
+    public float walkVolume = 1f;
+    public bool spatialWalk = true; // true = 3D (enemy position), false = 2D (camera)
+    private AudioSource walkAudioSource;
+
     private Rigidbody2D rb; // Rigidbody for movement physics
     private Animator animator; // Animator for handling animations
     private GameManagerScript gameManager; // Reference to game manager
@@ -35,12 +56,39 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
     private float attackTimer; // Timer controlling attack cooldown
     private bool isDead; // Tracks whether enemy is dead
 
+    // prevent playing death sound multiple times
+    private bool deathSoundPlayed = false;
+
+    // track previous animator hurt state to detect transitions
+    private bool prevAnimHurt = false;
+
     // ---------------- UNITY START ----------------
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Get Rigidbody2D component
         animator = GetComponent<Animator>(); // Get Animator component
         gameManager = FindFirstObjectByType<GameManagerScript>(); // Find GameManager in scene
+
+        // Auto-find AudioManager if not assigned
+        if (audioManager == null)
+            audioManager = FindFirstObjectByType<AudioManager>();
+
+        // Prepare walk audio source (per-enemy). Use existing AudioSource if present, otherwise add one if walkClip assigned.
+        if (walkClip != null)
+        {
+            walkAudioSource = GetComponent<AudioSource>();
+            if (walkAudioSource == null)
+            {
+                walkAudioSource = gameObject.AddComponent<AudioSource>();
+                walkAudioSource.playOnAwake = false;
+            }
+
+            walkAudioSource.clip = walkClip;
+            walkAudioSource.loop = true;
+            walkAudioSource.volume = walkVolume;
+            // spatialBlend 1 => 3D, 0 => 2D
+            walkAudioSource.spatialBlend = spatialWalk ? 1f : 0f;
+        }
 
         attackTimer = attackCooldown; // Initialize attack timer
 
@@ -64,6 +112,8 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
         }
 
         currentState = EnemyState.Idle; // Start in Idle state
+        deathSoundPlayed = false;
+        prevAnimHurt = false;
         Debug.Log("[Enemy] Initialized."); // Debug log
     }
 
@@ -103,6 +153,28 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
 
         HandleAttackTimer(distance); // Handle attack timing logic
         UpdateAnimations(); // Update animation states
+
+        // Watch Animator's "IsDead" bool and play death sound when it flips true (covers animation-driven death)
+        if (animator != null && AnimatorHasParameter("IsDead"))
+        {
+            bool animDead = animator.GetBool("IsDead");
+            if (animDead && !deathSoundPlayed)
+            {
+                PlayDeathSound();
+                deathSoundPlayed = true;
+            }
+        }
+
+        // Watch Animator's "IsHurt" bool and play hurt sound when it transitions true
+        if (animator != null && AnimatorHasParameter("IsHurt"))
+        {
+            bool animHurt = animator.GetBool("IsHurt");
+            if (animHurt && !prevAnimHurt)
+            {
+                PlayHurtSound();
+            }
+            prevAnimHurt = animHurt;
+        }
     }
 
     // ---------------- FIXED UPDATE (PHYSICS) ----------------
@@ -137,7 +209,7 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
         {
             if (distance <= attackRange) // Double-check player is still in range
             {
-                Attack(); // Perform attack
+                Attack(); // Perform attack (starts animation)
             }
             else
             {
@@ -195,11 +267,113 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
         if (animator != null)
             animator.SetTrigger("IsAttacking");
 
-        if (playerHealth != null && playerHealth.gameObject != gameObject) // Prevent self-damage
+        // NOTE: damage is applied via Animation Event on Attack keyframe.
+        // If you want immediate damage instead, call DealAttackDamageEvent() here.
+    }
+
+    // Public entry for an Animation Event placed on the attack keyframe to play sound.
+    public void PlayAttackSoundEvent()
+    {
+        PlayAttackSound();
+    }
+
+    // Public entry for an Animation Event placed on the attack keyframe to apply damage.
+    // Add an Animation Event calling `DealAttackDamageEvent` at the frame you want damage to occur.
+    public void DealAttackDamageEvent()
+    {
+        if (isDead || player == null || playerHealth == null) return;
+
+        float distance = Vector2.Distance(transform.position, player.position);
+        if (distance > attackRange)
         {
-            Debug.Log("Enemy hitting: " + playerHealth.gameObject.name);
-            playerHealth.TakeDamage(damage);
+            Debug.Log("[Enemy] Damage event skipped: player out of range.");
+            return;
         }
+
+        if (playerHealth.gameObject == gameObject) return; // safety
+
+        Debug.Log("Enemy dealing damage to: " + playerHealth.gameObject.name);
+        playerHealth.TakeDamage(damage);
+    }
+
+    // Play sound when enemy attacks. Priority:
+    // 1) per-enemy attackClip
+    // 2) assigned AudioManager.audioClip or AudioManager.PlayAudio()
+    private void PlayAttackSound()
+    {
+        Vector3 playPosition = Camera.main != null ? Camera.main.transform.position : transform.position;
+
+        if (attackClip != null)
+        {
+            AudioSource.PlayClipAtPoint(attackClip, playPosition);
+            return;
+        }
+
+        if (audioManager != null)
+        {
+            // If AudioManager has a clip assigned, play it at camera position so 2D UI-like sound is audible
+            if (audioManager.audioClip != null)
+            {
+                AudioSource.PlayClipAtPoint(audioManager.audioClip, playPosition);
+            }
+            else
+            {
+                // fallback to AudioManager's PlayAudio implementation (uses its own AudioSource)
+                audioManager.PlayAudio();
+            }
+        }
+    }
+
+    // Play hurt sound. Called from Animator watcher or Animation Event.
+    private void PlayHurtSound()
+    {
+        Vector3 playPosition = spatialHurt ? transform.position : (Camera.main != null ? Camera.main.transform.position : transform.position);
+
+        if (hurtClip != null)
+        {
+            AudioSource.PlayClipAtPoint(hurtClip, playPosition);
+        }
+        else if (audioManager != null)
+        {
+            if (audioManager.audioClip != null)
+                AudioSource.PlayClipAtPoint(audioManager.audioClip, playPosition);
+            else
+                audioManager.PlayAudio();
+        }
+    }
+
+    // Public method for Animation Event to play hurt sound exactly on the hurt keyframe
+    public void PlayHurtSoundEvent()
+    {
+        PlayHurtSound();
+    }
+
+    // Play death sound. Called from Die(), Animator watcher, or Animation Event.
+    private void PlayDeathSound()
+    {
+        if (deathSoundPlayed) return;
+
+        Vector3 playPosition = spatialDeath ? transform.position : (Camera.main != null ? Camera.main.transform.position : transform.position);
+
+        if (deathClip != null)
+        {
+            AudioSource.PlayClipAtPoint(deathClip, playPosition);
+        }
+        else if (audioManager != null)
+        {
+            if (audioManager.audioClip != null)
+                AudioSource.PlayClipAtPoint(audioManager.audioClip, playPosition);
+            else
+                audioManager.PlayAudio();
+        }
+
+        deathSoundPlayed = true;
+    }
+
+    // Public method for Animation Event to play death sound exactly on the death keyframe
+    public void PlayDeathSoundEvent()
+    {
+        PlayDeathSound();
     }
 
     // ---------------- ANIMATION HANDLER ----------------
@@ -209,6 +383,17 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
 
         animator.SetBool("IsWalking", currentState == EnemyState.Chase); // True when chasing
         animator.SetBool("IsIdle", currentState == EnemyState.Idle); // True when idle
+    }
+
+    // Helper: check whether the attached Animator contains a parameter name
+    private bool AnimatorHasParameter(string paramName)
+    {
+        if (animator == null || string.IsNullOrEmpty(paramName)) return false;
+        foreach (var p in animator.parameters)
+        {
+            if (p.name == paramName) return true;
+        }
+        return false;
     }
 
     // ---------------- EXTERNAL ATTACK STATE (OPTIONAL) ----------------
@@ -230,7 +415,19 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
         StopMoving(); // Stop all movement
 
         if (animator != null)
-            animator.SetTrigger("IsDead"); // Play death animation
+        {
+            // set trigger and also (optionally) set bool so both animator setups are supported
+            animator.SetTrigger("IsDead");
+            if (AnimatorHasParameter("IsDead"))
+                animator.SetBool("IsDead", true);
+        }
+
+        // Play death sound immediately (covers code-driven death)
+        PlayDeathSound();
+
+        // stop any walking audio immediately
+        if (walkAudioSource != null && walkAudioSource.isPlaying)
+            walkAudioSource.Stop();
 
         if (gameManager != null)
             //gameManager.EnemyKilled(); // Notify GameManager

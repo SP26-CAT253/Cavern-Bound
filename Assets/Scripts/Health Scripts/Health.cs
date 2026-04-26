@@ -115,8 +115,8 @@ public class Health : MonoBehaviour
 
         invulTimer = invulnerabilityTime; // Reset invulnerability timer
 
-        // Trigger hurt animation ONLY for enemies
-        if (!isPlayer && animator != null)
+        // Trigger hurt animation for both player and enemy (was only enemies)
+        if (animator != null)
         {
             animator.SetTrigger("IsHurt");
         }

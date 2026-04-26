@@ -23,6 +23,15 @@ public class PlayerMovement : MonoBehaviour // Main player controller class
     private int availableJumps; // Tracks how many jumps remain
     private bool isGroundPounding; // Tracks if player is currently ground pounding
 
+    // ---------------- MOVEMENT AUDIO ----------------
+    [Header("Movement Audio")]
+    public AudioClip moveClip; // looping movement sound
+    [Range(0f, 1f)]
+    public float moveVolume = 1f;
+    public bool spatialMove = false;
+
+    private AudioSource moveAudioSource;
+
     // ---------------- ATTACK SETTINGS ----------------
     [Header("Attack")] // Creates a header in the Unity Inspector
     public float attackRange = 2.5f; // Radius of attack hit detection
@@ -30,6 +39,16 @@ public class PlayerMovement : MonoBehaviour // Main player controller class
     public Transform attackPoint;
 
     public LayerMask enemyLayer; // Layer mask to specify which layers are considered enemies for attack detection
+
+    // ---------------- ATTACK AUDIO ----------------
+    [Header("Attack Audio")]
+    public AudioClip attackClip; // clip to play on attack keyframe (assign in Inspector)
+    public bool spatialAttack = false; // true -> play at player position, false -> play at camera (2D)
+
+    // ---------------- HURT AUDIO ----------------
+    [Header("Hurt Audio")]
+    public AudioClip hurtClip; // clip to play when player is hurt
+    public bool spatialHurt = false; // true -> play at player position, false -> play at camera
 
     // ---------------- PICKUP SYSTEM ----------------
     [Header("Pickups")]
@@ -45,12 +64,34 @@ public class PlayerMovement : MonoBehaviour // Main player controller class
         availableJumps = maxJumps; // Initialize jump count
 
         gameManager = FindFirstObjectByType<GameManagerScript>(); // Find GameManager in scene
+
+        // Setup movement audio
+        if (moveClip != null)
+        {
+            moveAudioSource = GetComponent<AudioSource>();
+            if (moveAudioSource == null)
+            {
+                moveAudioSource = gameObject.AddComponent<AudioSource>();
+                moveAudioSource.playOnAwake = false;
+            }
+
+            moveAudioSource.clip = moveClip;
+            moveAudioSource.loop = true;
+            moveAudioSource.volume = moveVolume;
+            moveAudioSource.spatialBlend = spatialMove ? 1f : 0f;
+        }
     }
 
     // ---------------- MAIN UPDATE LOOP ----------------
     void Update()
     {
         if (Time.timeScale == 0f) return; // Stop input when game is paused
+
+        if (Time.timeScale == 0f)
+        {
+            UpdateMoveAudio(false);
+            return;
+        }
 
         // Get current connected gamepad (if any)
         Gamepad currentGamepad = InputSystem.devices.OfType<Gamepad>().FirstOrDefault();
@@ -84,6 +125,32 @@ public class PlayerMovement : MonoBehaviour // Main player controller class
 
         // Update animation states
         UpdateAnimations();
+
+        // Update movement audio based on whether player is moving and not ground pounding
+        {
+            if (animator == null) return;
+
+            float horizontalSpeed = Mathf.Abs(rb.linearVelocity.x);
+            bool isMoving = horizontalSpeed > 0.1f && !isGroundPounding;
+
+            animator.SetBool("IsMoving", isMoving);
+
+            UpdateMoveAudio(isMoving);
+        }
+
+        // -------- HURT AUDIO WATCHER --------
+        // Play hurt sound on rising edge of Animator "IsHurt" bool, if the parameter exists.
+        if (animator != null && AnimatorHasParameter("IsHurt"))
+        {
+            bool animHurt = animator.GetBool("IsHurt");
+            // track previous state using a static local field emulated with PlayerPrefs? No — use a private field.
+            // (prevAnimHurt declared below)
+            if (animHurt && !prevAnimHurt)
+            {
+                PlayHurtSoundEvent();
+            }
+            prevAnimHurt = animHurt;
+        }
 
         // -------- GROUND POUND CHECK --------
         // Only allow ground pound while in air and not already doing it
@@ -134,6 +201,29 @@ public class PlayerMovement : MonoBehaviour // Main player controller class
 
         // Apply animation parameters
         animator.SetBool("IsMoving", isMoving);
+    }
+
+    // ---------------- MOVEMENT AUDIO HANDLER ----------------
+    void UpdateMoveAudio(bool isMoving)
+    {
+        if (moveAudioSource == null) return; // No audio source to play sound
+        if (isMoving && !moveAudioSource.isPlaying)
+        {
+            moveAudioSource.Play(); // Start movement sound
+        }
+
+        // Smooth volume transition
+        float targetVolume = isMoving ? moveVolume : 0f;
+
+        moveAudioSource.volume = Mathf.Lerp(
+            moveAudioSource.volume,
+            targetVolume,
+            Time.deltaTime * 10f
+        );
+        if (!isMoving && moveAudioSource.isPlaying)
+        {
+            moveAudioSource.Stop(); // Stop movement sound
+        }
     }
 
     // ---------------- INPUT HANDLING ----------------
@@ -318,6 +408,72 @@ public class PlayerMovement : MonoBehaviour // Main player controller class
         if (animator != null)
             animator.SetTrigger("Attack"); // Trigger attack animation
     }
+
+    // Public method for Animation Event — call this from the attack animation keyframe
+    public void PlayAttackSoundEvent()
+    {
+        Vector3 playPos = spatialAttack ? transform.position : (Camera.main != null ? Camera.main.transform.position : transform.position);
+
+        if (attackClip != null)
+        {
+            AudioSource.PlayClipAtPoint(attackClip, playPos);
+            return;
+        }
+
+        if (audioManager != null)
+        {
+            if (audioManager.audioClip != null)
+            {
+                AudioSource.PlayClipAtPoint(audioManager.audioClip, playPos);
+            }
+            else
+            {
+                audioManager.PlayAudio();
+            }
+        }
+    }
+
+    public void PlayHurtSoundEvent()
+    {
+        Vector3 playPos = spatialHurt ? transform.position : (Camera.main != null ? Camera.main.transform.position : transform.position);
+
+        if (hurtClip != null)
+        {
+            AudioSource.PlayClipAtPoint(hurtClip, playPos);
+            return;
+        }
+
+        if (audioManager != null)
+        {
+            if (audioManager.audioClip != null)
+            {
+                AudioSource.PlayClipAtPoint(audioManager.audioClip, playPos);
+            }
+            else
+            {
+                audioManager.PlayAudio();
+            }
+        }
+    }
+
+    void OnDisable()
+    {
+        UpdateMoveAudio(false);
+    }
+
+    // ---------------- PRIVATE HELPERS ----------------
+    // Helper: check whether the attached Animator contains a parameter name
+    private bool AnimatorHasParameter(string paramName)
+    {
+        if (animator == null || string.IsNullOrEmpty(paramName)) return false;
+        foreach (var p in animator.parameters)
+        {
+            if (p.name == paramName) return true;
+        }
+        return false;
+    }
+    // previous animator hurt state
+    private bool prevAnimHurt = false;
 }
 
 
