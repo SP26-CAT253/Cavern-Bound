@@ -61,33 +61,33 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.8f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Scripts from Desert Game Project\CoinManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Lever &amp; Gate\GateController.cs" />
+    <Compile Include="Assets\Scripts\Managers\CoinManager.cs" />
     <Compile Include="Assets\Scripts\Scripts from Desert Game Project\AutoDestroyVFX.cs" />
     <Compile Include="Assets\Scripts\Player-Enemy Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Parallax Scripts\ParallaxCamera.cs" />
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Health Scripts\HealthPickup.cs" />
     <Compile Include="Assets\Scripts\Health Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameManagerScript.cs" />
     <Compile Include="Assets\Scripts\Player-Enemy Scripts\PlayerDamageDealer.cs" />
-    <Compile Include="Assets\Scripts\GameManagerScript.cs" />
-    <Compile Include="Assets\Scripts\GameOverScript.cs" />
     <Compile Include="Assets\Scripts\Health Scripts\FloatingEffect.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameOverScript.cs" />
     <Compile Include="Assets\Scripts\Scripts from Desert Game Project\EnemyDamage.cs" />
     <Compile Include="Assets\Scripts\Scripts from Desert Game Project\ScorpoMove.cs" />
     <Compile Include="Assets\Scripts\Player-Enemy Scripts\DetectionZone.cs" />
-    <Compile Include="Assets\Scripts\Scripts from Desert Game Project\GateController.cs" />
     <Compile Include="Assets\Scripts\Health Scripts\ImageController.cs" />
-    <Compile Include="Assets\Scripts\Scripts from Desert Game Project\ButtonTrigger.cs" />
     <Compile Include="Assets\Scripts\Parallax Scripts\ParallaxLayer.cs" />
     <Compile Include="Assets\Scripts\Scripts from Desert Game Project\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Parallax Scripts\ParallaxBackground.cs" />
     <Compile Include="Assets\Scripts\Scripts from Desert Game Project\GameManaScript.cs" />
     <Compile Include="Assets\Scripts\Scripts from Desert Game Project\FootstepAudio.cs" />
     <Compile Include="Assets\Scripts\Scripts from Desert Game Project\PlayerMovementScript (OLD).cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Scripts from Desert Game Project\InstaKill.cs" />
+    <Compile Include="Assets\Scripts\Managers\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Scripts from Desert Game Project\GameOverUI.cs" />
+    <Compile Include="Assets\Scripts\Lever &amp; Gate\LeverTrigger.cs" />
+    <Compile Include="Assets\Scripts\Player-Enemy Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Scripts from Desert Game Project\LevelTransition.cs" />
   </ItemGroup>
   <ItemGroup>

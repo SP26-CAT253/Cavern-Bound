@@ -122,7 +122,7 @@ public class Health : MonoBehaviour
         }
 
         // Update UI ONLY if this is the player
-        if (isPlayer && healthUI != null)
+        if (healthUI != null)
         {
             healthUI.TakeDamage((int)amount);
         }

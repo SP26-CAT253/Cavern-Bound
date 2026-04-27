@@ -51,6 +51,13 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
     private GameManagerScript gameManager; // Reference to game manager
     private Health playerHealth; // Reference to player's health script
 
+    // ---------------- PROMPT UI ----------------
+    [Header("Prompt UI")]
+    public GameObject promptUI;                       // Optional prompt (e.g. "Press E" or "!" above enemy)
+    public Vector2 promptScreenOffset = new(0f, 48f); // pixel offset from enemy position (screen space)
+    public float promptWorldOffsetY = 1.0f;           // Y offset when promptUI is in world-space
+    private bool promptVisible = false;
+
     // ---------------- INTERNAL STATE ----------------
     private EnemyState currentState; // Current AI state
     private float attackTimer; // Timer controlling attack cooldown
@@ -58,9 +65,6 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
 
     // prevent playing death sound multiple times
     private bool deathSoundPlayed = false;
-
-    // track previous animator hurt state to detect transitions
-    private bool prevAnimHurt = false;
 
     // ---------------- UNITY START ----------------
     void Start()
@@ -111,9 +115,12 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
             }
         }
 
+        // Ensure prompt UI is hidden initially
+        if (promptUI != null)
+            promptUI.SetActive(false);
+
         currentState = EnemyState.Idle; // Start in Idle state
         deathSoundPlayed = false;
-        prevAnimHurt = false;
         Debug.Log("[Enemy] Initialized."); // Debug log
     }
 
@@ -154,6 +161,23 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
         HandleAttackTimer(distance); // Handle attack timing logic
         UpdateAnimations(); // Update animation states
 
+        // Prompt UI: show while player within detectionRange (but not when dead)
+        bool shouldShowPrompt = !isDead && distance <= detectionRange;
+        if (shouldShowPrompt && !promptVisible)
+        {
+            ShowPrompt();
+        }
+        else if (!shouldShowPrompt && promptVisible)
+        {
+            HidePrompt();
+        }
+
+        // If visible, update its position each frame
+        if (promptVisible)
+        {
+            UpdatePromptPosition();
+        }
+
         // Watch Animator's "IsDead" bool and play death sound when it flips true (covers animation-driven death)
         if (animator != null && AnimatorHasParameter("IsDead"))
         {
@@ -163,17 +187,6 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
                 PlayDeathSound();
                 deathSoundPlayed = true;
             }
-        }
-
-        // Watch Animator's "IsHurt" bool and play hurt sound when it transitions true
-        if (animator != null && AnimatorHasParameter("IsHurt"))
-        {
-            bool animHurt = animator.GetBool("IsHurt");
-            if (animHurt && !prevAnimHurt)
-            {
-                PlayHurtSound();
-            }
-            prevAnimHurt = animHurt;
         }
     }
 
@@ -268,7 +281,6 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
             animator.SetTrigger("IsAttacking");
 
         // NOTE: damage is applied via Animation Event on Attack keyframe.
-        // If you want immediate damage instead, call DealAttackDamageEvent() here.
     }
 
     // Public entry for an Animation Event placed on the attack keyframe to play sound.
@@ -394,6 +406,74 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
             if (p.name == paramName) return true;
         }
         return false;
+    }
+
+    // ---------------- PROMPT UI HELPERS ----------------
+    private void ShowPrompt()
+    {
+        if (promptUI == null) return;
+        promptUI.SetActive(true);
+        promptVisible = true;
+        UpdatePromptPosition();
+    }
+
+    private void HidePrompt()
+    {
+        if (promptUI == null) return;
+        promptUI.SetActive(false);
+        promptVisible = false;
+    }
+
+    // Update the prompt position to sit above this enemy.
+    // Supports Screen Space - Overlay, Screen Space - Camera and World Space canvases.
+    private void UpdatePromptPosition()
+    {
+        if (promptUI == null) return;
+
+        if (!promptUI.TryGetComponent<RectTransform>(out var promptRect))
+        {
+            // Not a UI element; treat as world-space object and position above enemy
+            promptUI.transform.position = transform.position + Vector3.up * promptWorldOffsetY;
+            return;
+        }
+
+        // Determine canvas render mode and position accordingly
+        Canvas canvas = promptRect.GetComponentInParent<Canvas>();
+        Camera cam = Camera.main;
+
+        Vector3 worldPos = transform.position;
+        Vector3 screenPoint = cam != null ? cam.WorldToScreenPoint(worldPos) : Vector3.zero;
+
+        if (canvas != null && canvas.renderMode == RenderMode.WorldSpace)
+        {
+            // place prompt in world-space above enemy
+            Vector3 worldOffset = Vector3.up * promptWorldOffsetY;
+            promptUI.transform.position = transform.position + worldOffset;
+        }
+        else
+        {
+            // screen-space (Overlay or Camera) - convert world point to canvas space
+            if (canvas != null && canvas.renderMode == RenderMode.ScreenSpaceCamera && canvas.worldCamera != null)
+            {
+                // use canvas camera if assigned
+                screenPoint = canvas.worldCamera.WorldToScreenPoint(worldPos);
+            }
+
+            // For ScreenSpace overlay and ScreenSpaceCamera, placing RectTransform.position to screen point works
+            Vector3 targetScreenPos = screenPoint + (Vector3)promptScreenOffset;
+
+            // If canvas is in Overlay or Camera modes, set anchored position using RectTransformUtility
+            RectTransform canvasRect = canvas != null ? canvas.GetComponent<RectTransform>() : null;
+            if (canvasRect != null && RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, targetScreenPos, canvas.renderMode == RenderMode.ScreenSpaceCamera ? canvas.worldCamera : null, out Vector2 localPoint))
+            {
+                promptRect.localPosition = localPoint;
+            }
+            else
+            {
+                // fallback: set world position based on screen point
+                promptRect.position = targetScreenPos;
+            }
+        }
     }
 
     // ---------------- EXTERNAL ATTACK STATE (OPTIONAL) ----------------

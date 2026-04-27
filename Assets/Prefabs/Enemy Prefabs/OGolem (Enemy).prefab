@@ -29,9 +29,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: d10c49daf97ce22439b6d411f062711d, type: 3}
     - target: {fileID: 1729202664310810527, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
+      propertyPath: promptUI
+      value: 
+      objectReference: {fileID: 5398825090185556497, guid: dda631e98cba36c4f80157c673a7803c, type: 3}
+    - target: {fileID: 1729202664310810527, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
       propertyPath: deathClip
       value: 
       objectReference: {fileID: 8300000, guid: 27f9d10778f0df64790d634a4fdf819b, type: 3}
+    - target: {fileID: 1729202664310810527, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
+      propertyPath: promptScreenOffset.y
+      value: 96
+      objectReference: {fileID: 0}
     - target: {fileID: 2840446915792190306, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -84,6 +92,18 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7308682158237066962, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308682158237066962, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
+      propertyPath: currentHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308682158237066962, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 6999215893934853301}
     - target: {fileID: 8256754472258662024, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
       propertyPath: m_Controller
       value: 
@@ -93,3 +113,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
+--- !u!212 &6999215893934853301 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 749615980691417220, guid: 9648b0e6630341f4297f75241620b42d, type: 3}
+  m_PrefabInstance: {fileID: 7729617350584968241}
+  m_PrefabAsset: {fileID: 0}
