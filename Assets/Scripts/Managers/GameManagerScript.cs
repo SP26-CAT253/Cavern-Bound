@@ -15,9 +15,6 @@ public class GameManagerScript : MonoBehaviour
     [Header("Level Progress")]
     public int enemiesRemaining;
 
-    [Header("Spawner Reference")]
-    //public EnemySpawner enemySpawner;
-
     private bool isPaused;
 
     [Header("Level Settings")]
@@ -39,12 +36,7 @@ public class GameManagerScript : MonoBehaviour
         Cursor.visible = true;
 
         // Count enemies in scene
-        enemiesRemaining = 0; // IMPORTANT: spawner controls this now
-    }
-
-    public void RegisterEnemySpawn()
-    {
-        enemiesRemaining++;
+        enemiesRemaining = GameObject.FindGameObjectsWithTag("Enemy").Length;
     }
 
     void Update()
@@ -73,13 +65,6 @@ public class GameManagerScript : MonoBehaviour
     public void EnemyKilled()
     {
         enemiesRemaining--;
-
-        /*
-        if (enemySpawner != null)
-        {
-            enemySpawner.RemoveDeadEnemies();
-        }
-        */
 
         if (enemiesRemaining <= 0)
         {

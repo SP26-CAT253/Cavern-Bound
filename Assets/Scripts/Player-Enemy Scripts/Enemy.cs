@@ -510,7 +510,7 @@ public class Enemy : MonoBehaviour // Enemy behavior script attached to enemy Ga
             walkAudioSource.Stop();
 
         if (gameManager != null)
-            //gameManager.EnemyKilled(); // Notify GameManager
+            gameManager.EnemyKilled(); // Notify GameManager
 
         Destroy(gameObject, 1.5f); // Destroy enemy after delay
     }
