@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 938943928154464263, guid: 4e247f2ea6c78244b99ee58b9641b223, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -109,9 +109,9 @@ MonoBehaviour:
   onPressed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4107664046782901521}
-        m_TargetAssemblyTypeName: LeverTrigger, Assembly-CSharp
-        m_MethodName: set_enabled
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

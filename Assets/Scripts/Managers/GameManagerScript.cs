@@ -10,8 +10,18 @@ public class GameManagerScript : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject gameOverUI;
     public GameObject gameWinUI;
+    public GameObject hpBarUI;
+
+    [Header("Level Progress")]
+    public int enemiesRemaining;
+
+    [Header("Spawner Reference")]
+    //public EnemySpawner enemySpawner;
 
     private bool isPaused;
+
+    [Header("Level Settings")]
+    public bool isFinalLevel = false;
 
     void Start()
     {
@@ -22,8 +32,19 @@ public class GameManagerScript : MonoBehaviour
         gameOverUI.SetActive(false);
         gameWinUI.SetActive(false);
 
+        if (hpBarUI != null)
+            hpBarUI.SetActive(true);
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        // Count enemies in scene
+        enemiesRemaining = 0; // IMPORTANT: spawner controls this now
+    }
+
+    public void RegisterEnemySpawn()
+    {
+        enemiesRemaining++;
     }
 
     void Update()
@@ -49,12 +70,44 @@ public class GameManagerScript : MonoBehaviour
 
         return keyboardPause || gamepadPause;
     }
+    public void EnemyKilled()
+    {
+        enemiesRemaining--;
+
+        /*
+        if (enemySpawner != null)
+        {
+            enemySpawner.RemoveDeadEnemies();
+        }
+        */
+
+        if (enemiesRemaining <= 0)
+        {
+            if (isFinalLevel)
+                GameWin();
+            else
+                LoadNextLevel();
+        }
+    }
+
+    public void LoadNextLevel()
+    {
+        Time.timeScale = 1f; // Ensure game is not paused
+
+        int currentIndex = SceneManager.GetActiveScene().buildIndex; // Get current scene index
+
+        SceneManager.LoadScene(currentIndex + 1); // Load next scene in build order
+    }
 
     public void PauseGame()
     {
         if (gameOverUI.activeSelf || gameWinUI.activeSelf) return;
 
         pauseMenuUI.SetActive(true);
+
+        if (hpBarUI != null)
+            hpBarUI.SetActive(false);
+
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -62,19 +115,39 @@ public class GameManagerScript : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenuUI.SetActive(false);
+
+        // Only show HP bar if NOT in game over or win state
+        if (!gameOverUI.activeSelf && !gameWinUI.activeSelf)
+        {
+            if (hpBarUI != null)
+                hpBarUI.SetActive(true);
+        }
+
         Time.timeScale = 1f;
         isPaused = false;
     }
 
     public void GameOver()
     {
-        ResumeGame();
-        gameOverUI.SetActive(true);
+        StartCoroutine(GameOverDelay());
+        IEnumerator GameOverDelay()
+        {
+            // Wait a few seconds (adjust if needed)
+            yield return new WaitForSeconds(1f);
+
+            // Show Game Over screen
+            gameOverUI.SetActive(true);
+
+            // Pause the game
+            Time.timeScale = 1.0f;
+        }
     }
 
     public void GameWin()
     {
-        ResumeGame();
+        if (hpBarUI != null)
+            hpBarUI.SetActive(false);
+
         gameWinUI.SetActive(true);
     }
 
@@ -99,8 +172,8 @@ public class GameManagerScript : MonoBehaviour
     {
         // Best practice to handle quitting correctly in both the Editor and a built game.
 #if UNITY_EDITOR
-            // Exits Play mode in the Unity Editor
-            UnityEditor.EditorApplication.isPlaying = false;
+        // Exits Play mode in the Unity Editor
+        UnityEditor.EditorApplication.isPlaying = false;
 #else
         // Quits the application when running as a built executable
         Debug.Log("Quit function called"); // Check the Console for this message
