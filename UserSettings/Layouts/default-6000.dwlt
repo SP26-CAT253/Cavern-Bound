@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 976
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 49
+  controlID: 50
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 50
+  controlID: 51
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 51
+  controlID: 52
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -305,7 +305,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1303.3334
     y: 78.66667
-    width: 402.33325
+    width: 402.33337
     height: 894
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -901,34 +901,23 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -196712
-      - m_Data: -192148
-      - m_Data: -175574
-      - m_Data: -175492
-      - m_Data: -175254
-      - m_Data: -160902
-      - m_Data: -160026
-      - m_Data: -8938
-      - m_Data: -8734
-      - m_Data: -8526
-      - m_Data: -8322
-      - m_Data: -8114
-      - m_Data: -7906
-      - m_Data: -5992
-      - m_Data: -4966
-      - m_Data: -4758
-      - m_Data: -4402
-      - m_Data: -4198
-      - m_Data: -3538
-      - m_Data: -1314
-      - m_Data: 55356
-      - m_Data: 55596
-      - m_Data: 56788
-      - m_Data: 57028
-      - m_Data: 58844
-      - m_Data: 59084
-      - m_Data: 64950
-      - m_Data: 79934
+      - m_Data: -242636
+      - m_Data: -238594
+      - m_Data: -238256
+      - m_Data: -236932
+      - m_Data: -236350
+      - m_Data: -236306
+      - m_Data: -205490
+      - m_Data: -204764
+      - m_Data: -169420
+      - m_Data: -166100
+      - m_Data: -19074
+      - m_Data: -7618
+      - m_Data: -6708
+      - m_Data: -1382
+      - m_Data: 61656
+      - m_Data: 61722
+      - m_Data: 61784
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1298,13 +1287,13 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 0
       containerId: overlay-toolbar__left
-      displayed: 1
+      displayed: 0
       id: Scene View/Tilemap Focus
       index: 4
-      contents: '{"m_Layout":0,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":0,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":25.333332061767579},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25.333332}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 0
@@ -1591,9 +1580,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.10026768, y: -0.34208742, z: -7.65843}
+    m_Target: {x: 470.3114, y: 215.25693, z: 1.6256349}
     speed: 2
-    m_Value: {x: -0.10026768, y: -0.34208742, z: -7.65843}
+    m_Value: {x: 470.3114, y: 215.25693, z: 1.6256349}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1643,9 +1632,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.743724
+    m_Target: 387.01697
     speed: 2
-    m_Value: 8.743724
+    m_Value: 387.01697
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1728,7 +1717,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1738,7 +1727,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\nicho_sfdy\Documents\GitHub\Cavern Bound
   m_LockTracker:
@@ -1747,17 +1736,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs:
-    - m_Data: 54136
+    - m_Data: 54246
     m_LastClickedID:
-      m_Data: 54136
+      m_Data: 54246
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 54086
-    - m_Data: 54088
-    - m_Data: 54090
-    - m_Data: 54092
-    - m_Data: 54094
-    - m_Data: 54096
+    - m_Data: 53754
+    - m_Data: 53756
+    - m_Data: 53758
+    - m_Data: 53760
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1790,12 +1777,10 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 54086
-    - m_Data: 54088
-    - m_Data: 54090
-    - m_Data: 54092
-    - m_Data: 54094
-    - m_Data: 54096
+    - m_Data: 53754
+    - m_Data: 53756
+    - m_Data: 53758
+    - m_Data: 53760
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

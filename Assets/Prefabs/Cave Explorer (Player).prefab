@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 4188212529799553122}
   - component: {fileID: 5193562588132676227}
   - component: {fileID: 8505306348075645548}
-  - component: {fileID: 9123272115908991492}
+  - component: {fileID: 5012073830156355702}
   - component: {fileID: -7172139974262155580}
   m_Layer: 6
   m_Name: Cave Explorer (Player)
@@ -294,8 +294,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &9123272115908991492
-BoxCollider2D:
+--- !u!70 &5012073830156355702
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -329,17 +329,8 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6875, y: 1.75}
-    newSize: {x: 1.875, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   m_Size: {x: 1.6875, y: 1.75}
-  m_EdgeRadius: 0
+  m_Direction: 0
 --- !u!95 &-7172139974262155580
 Animator:
   serializedVersion: 7
