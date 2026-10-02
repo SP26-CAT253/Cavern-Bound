@@ -129,11 +129,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3383943389064845429, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: m_Name
-      value: Lever (2)
+      value: Lever (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: oneUse
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
+      propertyPath: promptUI
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: audioManager
@@ -142,11 +146,11 @@ PrefabInstance:
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: leverAnimator
       value: 
-      objectReference: {fileID: 590499327}
+      objectReference: {fileID: 751638223}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 516475287}
+      objectReference: {fileID: 1392017999}
     - target: {fileID: 5152357711618250440, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.2223
@@ -47830,7 +47834,7 @@ Transform:
   m_GameObject: {fileID: 516475287}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.02, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48522,11 +48526,6 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
---- !u!95 &590499327 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 138776180656486138, guid: 676f7a8c76957634494fcc003551e445, type: 3}
-  m_PrefabInstance: {fileID: 4203017846121217957}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -48788,6 +48787,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8972749889257899133, guid: 8253657d985aaf24c92707da77797de7, type: 3}
   m_PrefabInstance: {fileID: 707752467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &751638223 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 138776180656486138, guid: 676f7a8c76957634494fcc003551e445, type: 3}
+  m_PrefabInstance: {fileID: 68754613}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &752731706
 GameObject:
@@ -49774,11 +49778,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3383943389064845429, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: m_Name
-      value: Lever (1)
+      value: Lever (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: oneUse
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
+      propertyPath: promptUI
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: audioManager
@@ -49787,11 +49795,11 @@ PrefabInstance:
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: leverAnimator
       value: 
-      objectReference: {fileID: 590499327}
+      objectReference: {fileID: 1208171918}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1392017999}
+      objectReference: {fileID: 516475287}
     - target: {fileID: 5152357711618250440, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.623936
@@ -49840,6 +49848,11 @@ PrefabInstance:
 --- !u!4 &1208171917 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5152357711618250440, guid: 676f7a8c76957634494fcc003551e445, type: 3}
+  m_PrefabInstance: {fileID: 1208171916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1208171918 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 138776180656486138, guid: 676f7a8c76957634494fcc003551e445, type: 3}
   m_PrefabInstance: {fileID: 1208171916}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1230165570
@@ -63538,8 +63551,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1208171917}
   - {fileID: 68754614}
+  - {fileID: 1208171917}
   - {fileID: 1638137071}
   - {fileID: 1712965656}
   m_Father: {fileID: 0}
@@ -63558,7 +63571,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: oneUse
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
+      propertyPath: promptUI
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: audioManager
@@ -63567,7 +63584,7 @@ PrefabInstance:
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: leverAnimator
       value: 
-      objectReference: {fileID: 590499327}
+      objectReference: {fileID: 1638137072}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -63626,6 +63643,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5152357711618250440, guid: 676f7a8c76957634494fcc003551e445, type: 3}
   m_PrefabInstance: {fileID: 1638137070}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1638137072 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 138776180656486138, guid: 676f7a8c76957634494fcc003551e445, type: 3}
+  m_PrefabInstance: {fileID: 1638137070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1712965655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63640,7 +63662,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: oneUse
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
+      propertyPath: promptUI
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: audioManager
@@ -63649,7 +63675,7 @@ PrefabInstance:
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: leverAnimator
       value: 
-      objectReference: {fileID: 590499327}
+      objectReference: {fileID: 1712965657}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -63702,6 +63728,11 @@ PrefabInstance:
 --- !u!4 &1712965656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5152357711618250440, guid: 676f7a8c76957634494fcc003551e445, type: 3}
+  m_PrefabInstance: {fileID: 1712965655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1712965657 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 138776180656486138, guid: 676f7a8c76957634494fcc003551e445, type: 3}
   m_PrefabInstance: {fileID: 1712965655}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1726901651
@@ -64561,10 +64592,6 @@ PrefabInstance:
       value: Lever
       objectReference: {fileID: 0}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
-      propertyPath: oneUse
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: promptUI
       value: 
       objectReference: {fileID: 305656869}
@@ -64572,10 +64599,6 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 514657949}
-    - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
-      propertyPath: promptScreenOffset.y
-      value: 170
-      objectReference: {fileID: 0}
     - target: {fileID: 4107664046782901521, guid: 676f7a8c76957634494fcc003551e445, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
