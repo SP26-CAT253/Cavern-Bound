@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 31a4280e96786ae459ad25c6d8d85b04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8521377754715877246
+    second: leatherarmor_0
+  - first:
+      213: 4276685485514065026
+    second: leatherarmor_1
+  - first:
+      213: 7853715684084752841
+    second: leatherarmor_2
+  - first:
+      213: -6553251843385835130
+    second: leatherarmor_3
+  - first:
+      213: 5894946515818813917
+    second: leatherarmor_4
+  - first:
+      213: 6218740679496553247
+    second: leatherarmor_5
+  - first:
+      213: 7831749231780996455
+    second: leatherarmor_6
+  - first:
+      213: -7335971397384010323
+    second: leatherarmor_7
+  - first:
+      213: -3686871348760626293
+    second: leatherarmor_8
+  - first:
+      213: 6446707040611015761
+    second: leatherarmor_9
+  - first:
+      213: -5326086401411303529
+    second: leatherarmor_10
+  - first:
+      213: -8208255351083109603
+    second: leatherarmor_11
+  - first:
+      213: -2114667870089021588
+    second: leatherarmor_12
+  - first:
+      213: 5691619226726952009
+    second: leatherarmor_13
+  - first:
+      213: -4185214087362481667
+    second: leatherarmor_14
+  - first:
+      213: 5230191219342491861
+    second: leatherarmor_15
+  - first:
+      213: -4544170348760050203
+    second: leatherarmor_16
+  - first:
+      213: 6267992922580715827
+    second: leatherarmor_17
+  - first:
+      213: -8022357681824804007
+    second: leatherarmor_18
+  - first:
+      213: 4636683115341517089
+    second: leatherarmor_19
+  - first:
+      213: -2675974356807733423
+    second: leatherarmor_20
+  - first:
+      213: 5533740982101009709
+    second: leatherarmor_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: leatherarmor_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 198
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f61c27be3024670800000000000000
+      internalID: 8521377754715877246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 197
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284822c4ac6d95b30800000000000000
+      internalID: 4276685485514065026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 197
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c129cccdc00efc60800000000000000
+      internalID: 7853715684084752841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 197
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68140574b2c2e05a0800000000000000
+      internalID: -6553251843385835130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 167
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd99e459f9e0fc150800000000000000
+      internalID: 5894946515818813917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_5
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 166
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13d9af13b76d4650800000000000000
+      internalID: 6218740679496553247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_6
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 165
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765ae329e66ffac60800000000000000
+      internalID: 7831749231780996455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_7
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 167
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da50088b1e4613a90800000000000000
+      internalID: -7335971397384010323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_8
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 101
+        width: 11
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8bbe8cca0a95dcc0800000000000000
+      internalID: -3686871348760626293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_9
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 165
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c11a6b5ed477950800000000000000
+      internalID: 6446707040611015761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 102
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79737d003a0f516b0800000000000000
+      internalID: -5326086401411303529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_11
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 102
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13fdf45f3b661e80800000000000000
+      internalID: -8208255351083109603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 101
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c677961b6c037a2e0800000000000000
+      internalID: -2114667870089021588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_13
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 39
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ce7ddf781bcfe40800000000000000
+      internalID: 5691619226726952009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_14
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 39
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df17cc536f12be5c0800000000000000
+      internalID: -4185214087362481667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_15
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 39
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0c648043f559840800000000000000
+      internalID: 5230191219342491861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_16
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 39
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e55b43d42ddfe0c0800000000000000
+      internalID: -4544170348760050203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_17
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 8
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33906159a526cf650800000000000000
+      internalID: 6267992922580715827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_18
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 9
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953d4b1513cdaa090800000000000000
+      internalID: -8022357681824804007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 9
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1219bf92abec85040800000000000000
+      internalID: 4636683115341517089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_20
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fab6a10870ddad0800000000000000
+      internalID: -2675974356807733423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leatherarmor_21
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25e62daa1ccbcc40800000000000000
+      internalID: 5533740982101009709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      leatherarmor_0: 8521377754715877246
+      leatherarmor_1: 4276685485514065026
+      leatherarmor_10: -5326086401411303529
+      leatherarmor_11: -8208255351083109603
+      leatherarmor_12: -2114667870089021588
+      leatherarmor_13: 5691619226726952009
+      leatherarmor_14: -4185214087362481667
+      leatherarmor_15: 5230191219342491861
+      leatherarmor_16: -4544170348760050203
+      leatherarmor_17: 6267992922580715827
+      leatherarmor_18: -8022357681824804007
+      leatherarmor_19: 4636683115341517089
+      leatherarmor_2: 7853715684084752841
+      leatherarmor_20: -2675974356807733423
+      leatherarmor_21: 5533740982101009709
+      leatherarmor_3: -6553251843385835130
+      leatherarmor_4: 5894946515818813917
+      leatherarmor_5: 6218740679496553247
+      leatherarmor_6: 7831749231780996455
+      leatherarmor_7: -7335971397384010323
+      leatherarmor_8: -3686871348760626293
+      leatherarmor_9: 6446707040611015761
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

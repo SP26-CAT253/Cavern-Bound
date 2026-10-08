@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 743f5f924dfc8af4082e74503f150354
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1953095925135261069
+    second: woodenshield_0
+  - first:
+      213: -8985462131643394264
+    second: woodenshield_1
+  - first:
+      213: 5198747483068416890
+    second: woodenshield_2
+  - first:
+      213: -1409115818777470131
+    second: woodenshield_3
+  - first:
+      213: -2122112931803476534
+    second: woodenshield_4
+  - first:
+      213: 7323057724311365239
+    second: woodenshield_5
+  - first:
+      213: -475074962137111446
+    second: woodenshield_6
+  - first:
+      213: -3363844273211551540
+    second: woodenshield_7
+  - first:
+      213: 6801195575718557647
+    second: woodenshield_8
+  - first:
+      213: 8552549653828817311
+    second: woodenshield_9
+  - first:
+      213: -3290621966007040716
+    second: woodenshield_10
+  - first:
+      213: 666555815436244856
+    second: woodenshield_11
+  - first:
+      213: -7018919851985696578
+    second: woodenshield_12
+  - first:
+      213: 7459583705665365021
+    second: woodenshield_13
+  - first:
+      213: -823725159516659104
+    second: woodenshield_14
+  - first:
+      213: -2942490708721982256
+    second: woodenshield_15
+  - first:
+      213: -8378540150907301574
+    second: woodenshield_16
+  - first:
+      213: -2255363287500132218
+    second: woodenshield_17
+  - first:
+      213: 6881976000569833442
+    second: woodenshield_18
+  - first:
+      213: 3444268301571182786
+    second: woodenshield_19
+  - first:
+      213: -4974560914585191955
+    second: woodenshield_20
+  - first:
+      213: -6010324721162460553
+    second: woodenshield_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: woodenshield_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 198
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372cc02aa9535e4e0800000000000000
+      internalID: -1953095925135261069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 197
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827dbac5cc93d4380800000000000000
+      internalID: -8985462131643394264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 196
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73cf3daa49a52840800000000000000
+      internalID: 5198747483068416890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 196
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b926ee0a0d17ce0800000000000000
+      internalID: -1409115818777470131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 167
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd479e288dbc82e0800000000000000
+      internalID: -2122112931803476534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_5
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 166
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7766247733ab0a560800000000000000
+      internalID: 7323057724311365239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 165
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64a228c6d13869f0800000000000000
+      internalID: -475074962137111446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_7
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 167
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc05e77b4793151d0800000000000000
+      internalID: -3363844273211551540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_8
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 166
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7b9a28753b26e50800000000000000
+      internalID: 6801195575718557647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 165
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f915b58c892c0b670800000000000000
+      internalID: 8552549653828817311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 102
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4358d02a1cc5552d0800000000000000
+      internalID: -3290621966007040716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 102
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8775c0a8bf4104900800000000000000
+      internalID: 666555815436244856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 103
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8847b1599c79e90800000000000000
+      internalID: -7018919851985696578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_13
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 102
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14e9749bd3c58760800000000000000
+      internalID: 7459583705665365021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 39
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062257ae45a8194f0800000000000000
+      internalID: -823725159516659104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 40
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d42db75a4c2a27d0800000000000000
+      internalID: -2942490708721982256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 40
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3192d8cf1279bb80800000000000000
+      internalID: -8378540150907301574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_17
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 42
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680f8191a0753b0e0800000000000000
+      internalID: -2255363287500132218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_18
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 9
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e77ab2d5b0b18f50800000000000000
+      internalID: 6881976000569833442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_19
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 9
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0d94295cf7ccf20800000000000000
+      internalID: 3444268301571182786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_20
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 10
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de97b9c543fc6fab0800000000000000
+      internalID: -4974560914585191955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodenshield_21
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2
+        width: 42
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772ec5a9289079ca0800000000000000
+      internalID: -6010324721162460553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      woodenshield_0: -1953095925135261069
+      woodenshield_1: -8985462131643394264
+      woodenshield_10: -3290621966007040716
+      woodenshield_11: 666555815436244856
+      woodenshield_12: -7018919851985696578
+      woodenshield_13: 7459583705665365021
+      woodenshield_14: -823725159516659104
+      woodenshield_15: -2942490708721982256
+      woodenshield_16: -8378540150907301574
+      woodenshield_17: -2255363287500132218
+      woodenshield_18: 6881976000569833442
+      woodenshield_19: 3444268301571182786
+      woodenshield_2: 5198747483068416890
+      woodenshield_20: -4974560914585191955
+      woodenshield_21: -6010324721162460553
+      woodenshield_3: -1409115818777470131
+      woodenshield_4: -2122112931803476534
+      woodenshield_5: 7323057724311365239
+      woodenshield_6: -475074962137111446
+      woodenshield_7: -3363844273211551540
+      woodenshield_8: 6801195575718557647
+      woodenshield_9: 8552549653828817311
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
