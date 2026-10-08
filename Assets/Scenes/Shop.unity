@@ -207,25 +207,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4322684360595933423, guid: 228b258353aeb9941bc0efb74c126c0f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5276381325073310912, guid: 228b258353aeb9941bc0efb74c126c0f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6028950942645909300, guid: 228b258353aeb9941bc0efb74c126c0f, type: 3}
       propertyPath: m_Name
       value: Screens (Canvas)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6074716964268205186, guid: 228b258353aeb9941bc0efb74c126c0f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380443580491491941, guid: 228b258353aeb9941bc0efb74c126c0f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15100,7 +15084,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 34
   orthographic: 1
   orthographic size: 5
   m_Depth: -1
@@ -39019,7 +39003,7 @@ MonoBehaviour:
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 60
+    FieldOfView: 34
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000

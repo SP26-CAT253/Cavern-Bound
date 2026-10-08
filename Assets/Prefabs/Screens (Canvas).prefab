@@ -5534,7 +5534,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 8380443580491491941}
   gameOverUI: {fileID: 4322684360595933423}
   gameWinUI: {fileID: 5276381325073310912}
-  hpBarUI: {fileID: 0}
+  hpBarUI: {fileID: 4063438832644981090}
   enemiesRemaining: 0
   isFinalLevel: 0
 --- !u!95 &4326464931080804160
